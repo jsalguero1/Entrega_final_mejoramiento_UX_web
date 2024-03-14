@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-block: 0;
+}
+
+/* Fondo de la página */
+body::before {
+    content: "";
+    background-image: url('/static/fondo_web.jpg');
+    background-repeat: repeat;
+    opacity: 0.05;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.title_signup{
+    font-weight: bold;
+    line-height: 41px;
+    font-size: 36px;
+    margin-top: 99px;
+}
+
+.title_support{
+
+    text-align: center;
+    font-weight: 500; /* Semi-Bold */
+    line-height: 29px;
+    font-size: 24px;
+    margin-top: 40px;
+}
+
+#google{
+    width: 396px;
+    height: 56px;
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-top: 54px;
+    display: flex;
+    background-color: transparent;
+}
+
+#google:hover{
+    cursor: pointer;
+}
+
+#google:active{
+    background-color: #FFEBa3;
+}
+
+#google_icon{
+    display: inline-block;
+    width:18px;
+    height: 18px;
+    margin-left: 80px;
+    margin-top: 16px;
+    margin-right: 8px;
+}
+
+#google_text{
+    font-weight: bold; /* Semi-Bold */
+    line-height: 21px;
+    font-size: 16px;
+}
+
+#o{
+    margin-top: 48px;
+}
+
+.email_container, .password_container,
+.phone_container {
+    width: 24.75em; /* 396px / 16px (tamaño de fuente base) */
+    height: 3.5em; /* 56px / 16px (tamaño de fuente base) */
+    position: relative;
+    border-radius: 5px;
+}
+
+.email_container label, .password_container label,
+.phone_container label{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.email_container input, .password_container input,
+.phone_container input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    border: 2px solid black;
+}
+
+.email_container input:focus, .password_container input:focus,
+.phone_container input:focus{
+    border-color: #6750A4;
+}
+
+.email_container:focus-within label, .password_container:focus-within label 
+, .phone_container:focus-within label{
+    color: #6750A4;
+}
+
+.password_container{
+    position: relative;
+    margin-top: 40px;
+}
+
+.phone_container{
+    position: relative;
+    margin-top: 40px;
+}
+
+#icon_eye{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+}
+
+#signup_button{
+    width: 396px;
+    height: 67px;
+    border: 2px solid black;
+    background-color: #FFEBa3;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400; /* Regular */
+    margin-top: 50px;
+    padding: 16px;
+    align-self: center;
+}
+
+#signup_button:active{
+    background-color: #FFD700;
+    color: white
+}
+
+#signup_button:hover{
+    cursor: pointer;
+}
+
+
+#login {
+    color: black;
+    font-size: 17px;
+    line-height: 22px;
+    font-weight: 400; /* Regular */
+    text-decoration: solid;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+
+
+#login:hover {
+    color: blue;
+}
+
+#login:hover{
+    cursor: pointer;
+    color: blue;
+}
