@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-block: 0;
+}
+
+/* Fondo de la página */
+body::before {
+    content: "";
+    background-image: url('/static/fondo_web.jpg');
+    background-repeat: repeat;
+    opacity: 0.05;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+nav {
+    height: 160px;
+    width: 100%;
+    background-color: #EBE8FF;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.logo{
+    font-size: 50px;
+    margin-left: 42px;
+    margin-top: 53px;
+    color: black;
+}
+
+.nav__element{
+    font-size: 25px;
+    padding: 10px 24px;
+    background-color: #D3D0E5;
+    border-radius: 100px;
+}
+
+a{
+    color: black;
+}
+
+li:nth-child(2){
+    margin-left: 250px;
+    
+}
+
+li:nth-child(2) a{
+    background-color: #9960FF;
+    color: white;
+    font-weight: bold;
+}
+
+li:nth-child(3){
+    margin: 0 39px;
+}
+
+.titulo{
+    font-size: 45px;
+    margin-top: 40px;
+    text-align: center;
+}
+.code_container{
+    width: 396px;
+    height: 56px;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 160px;
+}
+
+.code_container label{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.code_container input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    box-sizing: border-box;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 20px;
+    border: 2px solid black;
+}
+
+
+.code_container input:focus{
+    border-color: #6750A4;
+}
+
+.code_container:focus-within label{
+    color: #6750A4;
+}
+
+#sync_carer{
+    width: 396px;
+    height: 67px;
+    border: 2px solid black;
+    background-color: #FFEBa3;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400; /* Regular */
+    margin-top: 80px;
+    padding: 16px;
+    align-self: center;
+}
+
+#sync_carer:active{
+    background-color: #FFD700;
+    color: white
+}
+
+#sync_carer:hover{
+    cursor: pointer;
+}
+
+#back_button{
+    margin-top: 40px;
+}
